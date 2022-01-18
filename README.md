@@ -1,4 +1,4 @@
-# Secure-Secrets-Keys
+# Secure-Secret-Keys
 
 
 How to Secure Secrets 🔑 in Android 
