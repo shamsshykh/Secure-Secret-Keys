@@ -2,8 +2,8 @@ package com.example.secure
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.example.secure.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.apiKey.text = Keys.apiKey()
-        binding.baseUrl.text = Keys.baseUrl()
+        binding.apiKey.text = Keys.apiKey().decodeBase64()
+        binding.baseUrl.text = Keys.baseUrl().decodeBase64()
+
+
     }
 }
